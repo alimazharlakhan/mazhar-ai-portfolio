@@ -1,7 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
-import portrait from "@/assets/portrait.jpg.asset.json";
-import studio from "@/assets/studio.jpg.asset.json";
 import commercial from "@/assets/thumb-commercial.jpg";
 import cinematic from "@/assets/thumb-cinematic.jpg";
 import animation from "@/assets/thumb-animation.jpg";
@@ -77,7 +75,7 @@ function Index() {
           </div>
         </div>
         <div className="relative">
-          <img src={portrait.url} alt="Mazhar Ali Lakhan in his AI video studio" className="aspect-[4/5] w-full rounded-3xl object-cover object-top shadow-glow" />
+          <img src="/portrait.jpg" alt="Mazhar Ali Lakhan in his AI video studio" className="aspect-[4/5] w-full rounded-3xl object-cover object-top shadow-glow" />
           <div className="absolute -bottom-6 -left-6 rounded-2xl border border-border bg-card px-5 py-4">
             <p className="font-display text-2xl font-bold">4</p>
             <p className="text-xs text-muted-foreground">Video specialties</p>
@@ -136,7 +134,7 @@ function Index() {
 
       {/* About */}
       <section id="about" className="mx-auto grid max-w-6xl items-center gap-12 px-6 py-24 md:grid-cols-2">
-        <img src={studio.url} alt="Mazhar presenting an AI video edit" loading="lazy" className="aspect-[4/5] w-full rounded-3xl object-cover" />
+        <img src="/studio.jpg" alt="Mazhar presenting an AI video edit" loading="lazy" className="aspect-[4/5] w-full rounded-3xl object-cover" />
         <div>
           <p className="text-sm uppercase tracking-[0.2em] text-primary">About</p>
           <h2 className="mt-3 font-display text-4xl font-bold text-balance-tight md:text-5xl">Creative direction, powered by AI.</h2>
