@@ -15,5 +15,5 @@ export default defineConfig({
   // Build for Vercel Functions when deploying there (Vercel sets VERCEL=1 in its
   // build env). Everywhere else — Lovable preview/publish and local builds —
   // the Cloudflare Workers target is used as before.
-  nitro: process.env.VERCEL ? { preset: "vercel" } : undefined,
+  ...(process.env["VERCEL"] ? { nitro: { preset: "vercel" } } : {}),
 });
